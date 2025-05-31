@@ -56,7 +56,7 @@ pipeline {
             }
         }
 
-        stage('Deploy Microservices') {
+        stage('Deploy Microservices & Prom Stack') {
             steps {
                 withAWS(credentials: 'your-aws-secret') {
                     dir('infra') {
