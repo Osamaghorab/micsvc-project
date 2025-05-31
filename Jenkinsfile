@@ -14,8 +14,19 @@ pipeline {
                 }
             }
         }
+        stage('Provision EKS & S3') {
+            steps {
+                withAWS(credentials: 'your-aws-secret') {
+                    dir('infra') {
+                        sh 'terraform init'
+                        sh 'terraform plan -out=tfplan'
+                        sh 'terraform apply -auto-approve tfplan'
+                    }
+                }
+            }
+        }
 
-        stage('Generate Main Backend Config & Provision EKS') {
+        stage('Generate Main Backend Config & Connect With Remote State') {
             steps {
                 withAWS(credentials: 'your-aws-secret') {
                     dir('infra') {
@@ -49,7 +60,7 @@ pipeline {
             steps {
                 withAWS(credentials: 'your-aws-secret') {
                     dir('infra') {
-                        sh 'ansible-playbook deploy-micsvc-in-eks.yaml'
+                        sh 'ansible-playbook deploymicsvc.yaml'
                         sh 'ansible-playbook deploy-prom-stack.yaml'
                     }
                 }
