@@ -72,7 +72,7 @@ This setup includes separate repositories for **application code**, **infrastruc
 ### **Deployment Steps**  
 1. **Clone repositories:**  
    ```sh
-   git clone https://github.com/your-repo/app-repo.git
+   git clone git@github.com:Osamaghorab/micsvc-project.git
    git clone git@github.com:Osamaghorab/infra-tf-pb.git
    git clone git@github.com:Osamaghorab/micsvc-manifests.git
 
