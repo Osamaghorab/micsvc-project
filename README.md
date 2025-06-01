@@ -42,11 +42,12 @@ This setup includes separate repositories for **application code**, **infrastruc
 ### **Node Exporter Dashboard**  
 ![Node Exporter](docs/images/node-exporter.png)  
 
+### **Kubernetes Cluster**  
+![Kubernetes Cluster Dashboard](docs/images/kubernetes-cluster.png)  
+
 ### **Alert Manager**  
 ![Alert Manager Test](docs/images/alert-manager-test.png)  
 
-### **Kubernetes Cluster**  
-![Kubernetes Cluster Dashboard](docs/images/kubernetes-cluster.png)  
 
 ### **AWS Infrastructure Details**  
 - **EKS Management Console**  
