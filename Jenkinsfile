@@ -32,8 +32,6 @@ pipeline {
                     dir('infra') {
                         sh './generate_backend.sh'
                         sh 'terraform init'
-                        sh 'terraform plan -out=tfplan'
-                        sh 'terraform apply -auto-approve tfplan'
                     }
                 }
             }
