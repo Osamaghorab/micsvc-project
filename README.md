@@ -59,6 +59,11 @@ This setup includes separate repositories for **application code**, **infrastruc
 
 ## **Repository Structure & Links**  
 
+Repository Structure
+📂 terraform/ → Contains Terraform scripts for AWS provisioning
+📂 ansible/ → Stores playbooks for system setup & configuration
+📂 jenkins/ → Holds CI/CD automation pipeline configuration
+
 - **Application Repo** (Contains Jenkinsfile):  
   🔗 [micsvc-project](https://github.com/Osamaghorab/micsvc-project)  
 
