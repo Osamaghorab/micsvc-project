@@ -59,10 +59,12 @@ This setup includes separate repositories for **application code**, **infrastruc
 
 ## **Repository Structure & Links**  
 
-Repository Structure
-📂 micsvc-manifests/ →  Helm configurations for microservices deployment & Kubernetes YAML files for services, deployments, and monitoring
-📂 infra-tf-pb/ →  Contains Terraform scripts for AWS provisioning & Stores playbooks for system setup & configuration
-📂 micsvc-project/ → Holds CI/CD automation pipeline configuration
+- **Repository Structure**
+- **micsvc-manifests** →  Helm configurations for microservices deployment & Kubernetes YAML files for services, deployments, and monitoring
+- **infra-tf-pb** →  Contains Terraform scripts for AWS provisioning & Stores playbooks for system setup & configuration
+- **micsvc-project** → Holds CI/CD automation pipeline configuration
+
+- **Links**
 
 - **Application Repo** (Contains Jenkinsfile):  
   🔗 [micsvc-project](https://github.com/Osamaghorab/micsvc-project)  
