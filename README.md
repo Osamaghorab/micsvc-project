@@ -57,10 +57,17 @@ This setup includes separate repositories for **application code**, **infrastruc
 
 ---
 
-## **Repository Structure**  
-- **Application Repo:** Contains the **Jenkinsfile** 
-- **Infrastructure Repo:** Manages **Terraform for AWS provisioning** and **Ansible for configuration**.  
-- **Deployment Repo:** Stores **Kubernetes manifests and Helm charts** for microservices orchestration.  
+## **Repository Structure & Links**  
+
+- **Application Repo** (Contains Jenkinsfile):  
+  🔗 [micsvc-project](https://github.com/Osamaghorab/micsvc-project)  
+
+- **Infrastructure Repo** (Terraform & Ansible for provisioning):  
+  🔗 [infra-tf-pb](https://github.com/Osamaghorab/infra-tf-pb)  
+
+- **Deployment Repo** (Kubernetes manifests & Helm charts):  
+  🔗 [micsvc-manifests](https://github.com/Osamaghorab/micsvc-manifests)  
+
 
 ---
 
